@@ -1,0 +1,64 @@
+/*  3. Slider Area
+/*----------------------------------------*/
+.slider-area, .slider-two-area, .slider-three-area, .slider-four-area {overflow: hidden; position: relative}
+.single-slide {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-position: center center;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 480px;
+}
+.slider-banner {padding-left: 25px;}
+.single-slide h1 {
+    color: #252531;
+    font-size: 36px;
+    font-weight: 200;
+    margin-bottom: 7px;
+    padding-top: 47px;
+    text-transform: uppercase;
+    width: 100%;
+}
+.owl-item.active .single-slide h1 {-webkit-animation: 1100ms ease-in-out 0s normal none 1 running fadeInRight;animation: 1100ms ease-in-out 0s normal none 1 running fadeInRight;}
+.single-slide h2 {
+    color: #252531;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 35px;
+    margin: 0 0 22px;
+    text-transform: uppercase;
+}
+.owl-item.active .single-slide h2 {-webkit-animation: 1500ms ease-in-out 0s normal none 1 running fadeInLeft;animation: 1500ms ease-in-out 0s normal none 1 running fadeInLeft;}
+.single-slide p {
+    color: #252531;
+    font-family: "Roboto",sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 25px;
+    margin: 0;
+}
+.owl-item.active .single-slide p {-webkit-animation: 2200ms ease-in-out 0s normal none 1 running bounceInDown;animation: 2200ms ease-in-out 0s normal none 1 running bounceInDown;}
+.banner-btn {
+    background: #252531 none repeat scroll 0 0;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 13.3px;
+    font-weight: 600;
+    margin-top: 25px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    letter-spacing: .2px
+}
+.banner-btn:hover, .banner-btn:focus, .banner-btn:active {
+    background: #BDA87F none repeat scroll 0 0;
+    color: #fff
+}
+.owl-item.active .banner-btn {-webkit-animation:  2000ms ease-in-out 0s normal none 1 running bounceInDown;animation:  2000ms ease-in-out 0s normal none 1 running bounceInDown}
+.owl-item.active .slide-two h1 {-webkit-animation: 1500ms ease-in-out 0s normal none 1 running fadeInLeft;animation: 1500ms ease-in-out 0s normal none 1 running fadeInLeft;}
+.owl-item.active .slide-two h2 {-webkit-animation: 1800ms ease-in-out 0s normal none 1 running fadeInLeft;animation: 1800ms ease-in-out 0s normal none 1 running fadeInLeft}
+.owl-item.active .slide-two p {-webkit-animation: 1200ms ease-in-out 0s normal none 1 running slideInDown;animation: 1200ms ease-in-out 0s normal none 1 running slideInDown}
+.owl-item.active .slide-two .banner-btn {-webkit-animation: 1400ms ease-in-out 0s normal none 1 running zoomInUp;animation: 1400ms ease-in-out 0s normal none 1 running zoomInUp}
+/*----------------------------------------*/
