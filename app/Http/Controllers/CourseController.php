@@ -193,8 +193,8 @@ class CourseController extends Controller
           ->where('id', $id)
           ->first();
 
-        /*  $file_path = 'assets/image/product/'.$objs->c_image;
-          unlink($file_path); */
+          $file_path = 'assets/image/product/'.$objs->c_image;
+          unlink($file_path);
 
           $input['imagename'] = time().'.'.$image->getClientOriginalExtension();
 
