@@ -29,37 +29,53 @@ TEENEEJJ - ตลาดนัดสวนจตุจักร
         </div>
     </div>
 
-
+    <?php
+    function DateThai($strDate)
+    {
+    $strYear = date("Y",strtotime($strDate))+543;
+    $strMonth= date("n",strtotime($strDate));
+    $strDay= date("j",strtotime($strDate));
+    $strHour= date("H",strtotime($strDate));
+    $strMinute= date("i",strtotime($strDate));
+    $strSeconds= date("s",strtotime($strDate));
+    $strMonthCut = Array("","ม.ค.","ก.พ.","มี.ค.","เม.ย.","พ.ค.","มิ.ย.","ก.ค.","ส.ค.","ก.ย.","ต.ค.","พ.ย.","ธ.ค.");
+    $strMonthThai=$strMonthCut[$strMonth];
+    return "$strDay $strMonthThai $strYear";
+    }
+     ?>
 
 
     <div class="blog-1x blog-1x-no-bg">
 		<div class="container">
 			<div class="row">
 
-
+        @if($blog)
+        @foreach($blog as $blogs)
 
 				<div class="col-md-4">
 					<div class="blog-single">
-						<img src="{{url('assets/images/2.png')}}" alt="slide 1">
+						<img src="{{url('assets/image/blog/'.$blogs->blog_img)}}" alt="{{$blogs->blog_title}}" style="min-height:230px; max-height:230px;">
 
-						<div class="blog-single-content">
-							<a href="blog-single.html"> Why coursecity is the best online learning institute? </a>
-							<p>Coursecity is an educational resource for children the teachers. curriculum classroom software is perfect.</p>
+						<div class="blog-single-content" style="padding: 10px 20px;">
+							<a href="{{url('blog_single/'.$blogs->id)}}" style="font-size: 16px;"> {{$blogs->blog_title}} </a>
 
 							<h3>
-								<i class="far fa-calendar-check"></i> 8 July, 2018
-								<span><i class="far fa-heart"></i> 8 </span>
+								<i class="far fa-calendar-check"></i> <?php echo DateThai($blogs->created_at); ?>
+								<span><i class="far fa-heart"></i> {{$blogs->blog_view}} </span>
 							</h3>
 						</div>
 					</div>
 				</div>
 
+        @endforeach
+      @endif
+
 
 				<div class="col-md-12">
-					<div class="course-pagination">
+
+          @include('pagination.default', ['paginator' => $blog])
 
 
-					</div>
 				</div>
 
 			</div>

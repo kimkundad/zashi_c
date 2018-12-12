@@ -88,9 +88,9 @@ TEENEEJJ - ตลาดนัดสวนจตุจักร
 							<img src="{{url('assets/image/blog/'.$blog[0]->blog_img)}}" alt="{{$blog[0]->blog_title}}" class="hvrbox-layer_bottom">
 							<div class="hvrbox-layer_top">
 								<div class="hvrbox-text">
-									<a href="{{url('blog/'.$blog[0]->id)}}" style="font-size: 18px;">{{$blog[0]->blog_title}}</a>
+									<a href="{{url('blog_single/'.$blog[0]->id)}}" style="font-size: 18px;">{{$blog[0]->blog_title}}</a>
 
-									<a href="{{url('blog/'.$blog[0]->id)}}" class="btn-small">อ่านเพิ่มเติม</a>
+									<a href="{{url('blog_single/'.$blog[0]->id)}}" class="btn-small">อ่านเพิ่มเติม</a>
 								</div>
 							</div>
 						</div>
@@ -108,9 +108,9 @@ TEENEEJJ - ตลาดนัดสวนจตุจักร
 									<img src="{{url('assets/image/blog/'.$blog[1]->blog_img)}}" alt="{{$blog[1]->blog_title}}" class="hvrbox-layer_bottom">
 									<div class="hvrbox-layer_top hvrbox-text">
 										<div class="hvrbox-text">
-											<a href="{{url('blog/'.$blog[1]->id)}}" style="font-size: 16px;">{{$blog[1]->blog_title}}</a>
+											<a href="{{url('blog_single/'.$blog[1]->id)}}" style="font-size: 16px;">{{$blog[1]->blog_title}}</a>
 
-											<a href="{{url('blog/'.$blog[1]->id)}}" class="btn-small">อ่านเพิ่มเติม</a>
+											<a href="{{url('blog_single/'.$blog[1]->id)}}" class="btn-small">อ่านเพิ่มเติม</a>
 										</div>
 									</div>
 								</div>
@@ -126,9 +126,9 @@ TEENEEJJ - ตลาดนัดสวนจตุจักร
 									<img src="{{url('assets/image/blog/'.$blog[2]->blog_img)}}" alt="{{$blog[2]->blog_title}}" class="hvrbox-layer_bottom">
 									<div class="hvrbox-layer_top hvrbox-text">
 										<div class="hvrbox-text">
-											<a href="{{url('blog/'.$blog[2]->id)}}" style="font-size: 16px;">{{$blog[2]->blog_title}}</a>
+											<a href="{{url('blog_single/'.$blog[2]->id)}}" style="font-size: 16px;">{{$blog[2]->blog_title}}</a>
 
-											<a href="{{url('blog/'.$blog[2]->id)}}" class="btn-small">อ่านเพิ่มเติม</a>
+											<a href="{{url('blog_single/'.$blog[2]->id)}}" class="btn-small">อ่านเพิ่มเติม</a>
 										</div>
 									</div>
 								</div>
@@ -144,9 +144,9 @@ TEENEEJJ - ตลาดนัดสวนจตุจักร
 									<img src="{{url('assets/image/blog/'.$blog[3]->blog_img)}}" alt="{{$blog[3]->blog_title}}" class="hvrbox-layer_bottom">
 									<div class="hvrbox-layer_top hvrbox-text">
 										<div class="hvrbox-text">
-											<a href="{{url('blog/'.$blog[3]->id)}}" style="font-size: 16px;">{{$blog[3]->blog_title}}</a>
+											<a href="{{url('blog_single/'.$blog[3]->id)}}" style="font-size: 16px;">{{$blog[3]->blog_title}}</a>
 
-											<a href="{{url('blog/'.$blog[3]->id)}}" class="btn-small">อ่านเพิ่มเติม</a>
+											<a href="{{url('blog_single/'.$blog[3]->id)}}" class="btn-small">อ่านเพิ่มเติม</a>
 										</div>
 									</div>
 								</div>
@@ -162,9 +162,9 @@ TEENEEJJ - ตลาดนัดสวนจตุจักร
 									<img src="{{url('assets/image/blog/'.$blog[4]->blog_img)}}" alt="{{$blog[4]->blog_title}}" class="hvrbox-layer_bottom">
 									<div class="hvrbox-layer_top hvrbox-text">
 										<div class="hvrbox-text">
-											<a href="{{url('blog/'.$blog[4]->id)}}" style="font-size: 16px;">{{$blog[4]->blog_title}}</a>
+											<a href="{{url('blog_single/'.$blog[4]->id)}}" style="font-size: 16px;">{{$blog[4]->blog_title}}</a>
 
-											<a href="{{url('blog/'.$blog[4]->id)}}" class="btn-small">อ่านเพิ่มเติม</a>
+											<a href="{{url('blog_single/'.$blog[4]->id)}}" class="btn-small">อ่านเพิ่มเติม</a>
 										</div>
 									</div>
 								</div>
@@ -258,12 +258,12 @@ TEENEEJJ - ตลาดนัดสวนจตุจักร
 									<div class="hvrbox-layer_top hvrbox-text">
 										<div class="hvrbox-text">
 											<a href="{{$coursed->youtube_course}}" class="btn-circle video"><i class="fas fa-play"></i></a>
-											<a href="{{url('course/'.$coursed->id_p)}}">{{$coursed->c_name}}</a>
+											<a href="{{url('course_single/'.$coursed->id_p)}}">{{$coursed->c_name}}</a>
 										</div>
 									</div>
 								</div>
 								<div class="single-course-content">
-									<a href="{{url('course/'.$coursed->id_p)}}">{{$coursed->c_name}} </a>
+									<a href="{{url('course_single/'.$coursed->id_p)}}">{{$coursed->c_name}} </a>
 									<p>{{$coursed->c_title}} <span>
 										@if($coursed->c_discount != 0)
 										<del>฿ {{$coursed->c_discount}}</del>

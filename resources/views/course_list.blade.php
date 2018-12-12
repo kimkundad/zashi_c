@@ -11,26 +11,24 @@ TEENEEJJ - ตลาดนัดสวนจตุจักร
 @section('content')
 
 
-<div class="main-banner course-list-banner">
-      <div class="hvrbox">
-          <img src="{{url('assets/images/about_head.png')}}" alt="Mountains" class="hvrbox-layer_bottom">
-          <div class="hvrbox-layer_top">
-              <div class="container">
-                  <div class="overlay-text text-center">
-                      <h3><b>2,579</b> Online Course & Video Tutorials!</h3>
-                      <div class="col-md-8 offset-md-2">
-            <div class="input-group">
-              <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Enter Your Search Here">
-              <div class="input-group-append">
-                <button class="btn btn-search" type="button"><i class="fas fa-search"></i></button>
-              </div>
-            </div>
-          </div>
-                  </div>
+<div class="page-banner">
+        <div class="hvrbox">
+            <img src="{{url('assets/images/about_head.png')}}" alt="Mountains" class="hvrbox-layer_bottom">
+            <div class="hvrbox-layer_top">
+                <div class="container">
+                    <div class="overlay-text text-left">
+                        <h3>{{$cat->cat_name}}</h3>
+                        <nav aria-label="breadcrumb">
+                          <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">{{$cat->cat_name}}</li>
+                          </ol>
+                        </nav>
+                    </div>
+                </div>
             </div>
         </div>
-      </div>
-  </div>
+    </div>
 
 
 
@@ -54,11 +52,11 @@ TEENEEJJ - ตลาดนัดสวนจตุจักร
 						      <div class="card-body">
 									<div class="category">
 										<ul>
-											<li><a href="#"><img src="{{url('assets/images/arrow-right.png')}}" alt="Image"> All Categories <span>45</span></a></li>
-											<li><a href="#"><img src="{{url('assets/images/arrow-right.png')}}" alt="Image"> Wordpress <span>30</span></a></li>
-											<li><a href="#"><img src="{{url('assets/images/arrow-right.png')}}" alt="Image"> Landing Page	 <span>20</span></a></li>
-											<li><a href="#"><img src="{{url('assets/images/arrow-right.png')}}" alt="Image"> Photography <span>15</span></a></li>
-
+                      @if($cat_list)
+                        @foreach($cat_list as $u)
+											<li><a href="{{url('course_list/'.$u->id)}}"><img src="{{url('assets/images/arrow-right.png')}}" alt="Image"> {{$u->cat_name}} <span>{{$u->option}}</span></a></li>
+											  @endforeach
+                      @endif
 										</ul>
 									</div>
 						      </div>
@@ -79,20 +77,11 @@ TEENEEJJ - ตลาดนัดสวนจตุจักร
 					<div class="course-header-right">
 						<div class="row">
 							<div class="col-md-6">
-								<div class="search-box d-flex flex-row">
-								  <p>Sort by : </p>
-								  <select class="form-control styleSelect">
-								    <option selected="">All Categories</option>
-								    <option value="1">Wordpress</option>
-								    <option value="2">HTML</option>
-								    <option value="3">Javascript</option>
-								    <option value="3">Photoshop</option>
-								  </select>
-								</div>
+
 							</div>
 							<div class="col-md-6">
 								<div class="course-tab">
-									<p>All prices are in USD</p>
+									<p>เรียนภาษาญี่ปุ่นออนไลน์</p>
 									<ul class="nav nav-tabs" id="myTab" role="tablist">
 									  <li class="nav-item">
 									    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fas fa-list"></i></a>
@@ -112,45 +101,46 @@ TEENEEJJ - ตลาดนัดสวนจตุจักร
 						  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 								<div class="all-course-list">
 
+                  @if($course)
+                  @foreach($course as $coursed)
+
 									<div class="media">
 										<div class="media-left-image">
 											<div class="hvrbox">
-												<img src="{{url('assets/images/1537158008.png')}}" alt="slide 1" class="hvrbox-layer_bottom">
+												<img src="{{url('assets/image/product/'.$coursed->c_image)}}" alt="{{$coursed->c_name}}" class="hvrbox-layer_bottom">
 												<div class="hvrbox-layer_top hvrbox-text">
 													<div class="hvrbox-text">
-														<a href="https://www.youtube.com/watch?v=zfeak_THR6E" class="btn-circle video"><i class="fas fa-play"></i></a><br>
-														<a href="course-single-one.html">Preview Course</a>
+														<a href="{{$coursed->youtube_course}}" class="btn-circle video"><i class="fas fa-play"></i></a><br>
+														<a href="{{url('course_single/'.$coursed->id_p)}}">ดูรายละเอียด</a>
 													</div>
 												</div>
 											</div>
 										</div>
 										<div class="media-body">
-											<h2><a href="course-single-one.html"> Learn Photoshop CC With Nir Eyal Complete Course </a></h2>
-											<h5>By Nir Eyal</h5>
-											<h4>$49 <del>$69</del></h4>
-											<a href="course-single-one.html" class="btn-bordered"> View Course </a>
+											<h2><a href="course-single-one.html"> {{$coursed->c_name}}</a></h2>
+											<h5>{{$coursed->c_title}}</h5>
+											<h4 style="font-size: 24px;">฿ {{$coursed->c_price}} @if($coursed->c_discount != 0)
+  										<del>฿ {{$coursed->c_discount}}</del>
+  										@endif</h4>
+											<a href="{{url('course_single/'.$coursed->id_p)}}" class="btn-bordered"> ดูรายละเอียด </a>
 											<h3>
 												<i class="fas fa-star"></i>
 												<i class="fas fa-star"></i>
 												<i class="fas fa-star"></i>
 												<i class="fas fa-star"></i>
-												<i class="fas fa-star"></i> (4)
-												<span>Enroll: 128 <i class="far fa-heart"></i></span>
+												<i class="fas fa-star"></i> (5)
+												<span>นักเรียน: {{$coursed->c_student}} <i class="far fa-heart"></i></span>
 											</h3>
 										</div>
 									</div>
 
+                  @endforeach
+                @endif
+
 
 
 									<div class="course-pagination">
-										<ul class="pagination">
-											<li class="page-item active"><span class="page-link">1</span></li>
-											<li class="page-item"><a class="page-link" href="#">2</a></li>
-											<li class="page-item"><a class="page-link" href="#">3</a></li>
-											<li class="page-item"><a class="page-link" href="#">4</a></li>
-											<li class="page-item"><a class="page-link" href="#">5</a></li>
-											<li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
-										</ul>
+										@include('pagination.default', ['paginator' => $course])
 									</div>
 
 								</div>
@@ -165,48 +155,52 @@ TEENEEJJ - ตลาดนัดสวนจตุจักร
 												<div class="row">
 
 
+                          @if($course)
+                          @foreach($course as $courses)
 
 												  <div class="col-md-4 tile web">
 													<div class="single-course">
 														<div class="hvrbox">
-															<img src="{{url('assets/images/1537158008.png')}}" alt="slide 1" class="hvrbox-layer_bottom">
+															<img src="{{url('assets/image/product/'.$coursed->c_image)}}" alt="{{$coursed->c_name}}" class="hvrbox-layer_bottom">
 															<div class="hvrbox-layer_top hvrbox-text">
 																<div class="hvrbox-text">
-																	<a href="https://www.youtube.com/watch?v=zfeak_THR6E" class="btn-circle video"><i class="fas fa-play"></i></a><br>
-																	<a href="course-single-one.html">Preview Course</a>
+																	<a href="{{$coursed->youtube_course}}" class="btn-circle video"><i class="fas fa-play"></i></a><br>
+																	<a href="{{url('course_single/'.$coursed->id_p)}}">ดูรายละเอียด</a>
 																</div>
 															</div>
 														</div>
 														<div class="single-course-content">
-															<a href="course-single-one.html">Learn Photoshop With Eyal Complete Course</a>
-															<p>Nir Eyal <span><del>$169</del> <b>$149</b></span></p>
+															<a href="{{url('course_single/'.$coursed->id_p)}}">{{$coursed->c_name}}</a>
+															<p>{{$coursed->c_title}} <span>@if($coursed->c_discount != 0)
+          										<del>฿ {{$coursed->c_discount}}</del>
+          										@endif<
+                               <b>฿ {{$coursed->c_price}}</b></span></p>
 															<h3>
 																<i class="fas fa-star"></i>
 																<i class="fas fa-star"></i>
 																<i class="fas fa-star"></i>
 																<i class="fas fa-star"></i>
 																<i class="fas fa-star"></i> (4)
-																<span>Student: 128</span>
+																<span>นักเรียน: {{$coursed->c_student}}</span>
 															</h3>
 														</div>
 													</div>
 												  </div>
 
 
+                          @endforeach
+                        @endif
+
+
 
 
 
  													<div class="col-md-12">
-														<div class="course-pagination">
-															<ul class="pagination">
-																<li class="page-item active"><span class="page-link">1</span></li>
-																<li class="page-item"><a class="page-link" href="#">2</a></li>
-																<li class="page-item"><a class="page-link" href="#">3</a></li>
-																<li class="page-item"><a class="page-link" href="#">4</a></li>
-																<li class="page-item"><a class="page-link" href="#">5</a></li>
-																<li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
-															</ul>
-														</div>
+
+
+                            @include('pagination.default', ['paginator' => $course])
+
+
 													</div>
 
 												</div>

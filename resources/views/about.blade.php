@@ -95,7 +95,7 @@ TEENEEJJ - ตลาดนัดสวนจตุจักร
 							<div class="col-md-3">
 								<div class="single-speaker">
 									<div class="hvrbox">
-										<img src="{{url('assets/images/15965494_10206213152167039_5353071833653529827_n.jpg')}}" alt="slide 1" class="hvrbox-layer_bottom">
+										<img src="{{url('assets/images/15965494_10206213152167039_5353071833653529827_n.jpg')}}" alt="ครูพี่โฮม" class="hvrbox-layer_bottom">
 										<div class="hvrbox-layer_top hvrbox-text">
 											<div class="hvrbox-text">
 				                               <ul>
@@ -116,7 +116,7 @@ TEENEEJJ - ตลาดนัดสวนจตุจักร
 							<div class="col-md-3">
 								<div class="single-speaker">
 									<div class="hvrbox">
-										<img src="{{url('assets/images/15965494_10206213152167039_535307183365352982_n.jpg')}}" alt="slide 1" class="hvrbox-layer_bottom">
+										<img src="{{url('assets/images/15965494_10206213152167039_535307183365352982_n.jpg')}}" alt="เอ็ตจัง" class="hvrbox-layer_bottom">
 										<div class="hvrbox-layer_top hvrbox-text">
 											<div class="hvrbox-text">
 				                               <ul>
