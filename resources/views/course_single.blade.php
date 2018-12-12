@@ -201,20 +201,20 @@ TEENEEJJ - ตลาดนัดสวนจตุจักร
 
 
 
-     <div class="cta-1x">
-       <div class="container">
-         <div class="row">
-           <div class="col-md-12">
-             <div class="cta-content">
-               <h3>Ready to Begin?</h3>
-               <p>Find subjects you're passionate about by browsing our online course categories. Start <br> learning with top courses Built With Industry Experts.</p>
-               <a href="#" class="btn-small">Start Teaching</a>
-               <a href="#" class="btn-small">Start Learning</a>
-             </div>
-           </div>
+  <div class="cta-1x">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+         <div class="cta-content">
+           <h3>คุณพร้อมเรียนภาษาญี่ปุ่น หรือยัง?</h3>
+           <p>ระหว่างเรียนมีฟังก์ชั่นไลฟ์แชทและฟังก์ชั่นแบบทดสอบ วิเคราะห์ผลคะแนนออกมาเป็นกราฟ <br> พร้อม Startdard Report รายงานคะแนนสอบ โปรแกรมประเมินโอกาสสอบผ่านและสอบติด Admission และ TCAS </p>
+           <a href="#" class="btn-small">เริ่มเรียนรู้</a>
+
          </div>
        </div>
      </div>
+   </div>
+ </div>
 
 
 

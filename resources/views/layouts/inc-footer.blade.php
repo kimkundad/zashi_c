@@ -11,15 +11,15 @@
 							<div class="col-md-4">
 								<div class="footer-top-right">
 								   <img src="{{url('assets/images/logo.png')}}" alt="slide 1">
-								   	<p>All of our website templates are	<br>offered as is, we do not offer any <br> guarantee or warranty.</p>
+								   	<p>ติวเตอร์ภาษาญี่ปุ่นอันดับ 1 ผู้ก่อตั้งสถาบันสอนภาษาญี่ปุ่น Za-shi, Learnsabuy มีสถิติติวลูกศิษย์ที่ติดอักษรศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย ได้มากที่สุด </p>
 	                               <ul>
-	                               		<li>+91 258 458 754</li>
-	                               		<li>meditrust@info.com</li>
+	                               		<li>{{get_phone()}}</li>
+	                               		<li>{{get_email()}}</li>
 									</ul>
 
 									<div class="footer-social-link">
 										<ul>
-											<li><a href="#"> <i class="fab fa-facebook-f"></i> </a></li>
+											<li><a href="https://www.facebook.com/JLPTOnline/"> <i class="fab fa-facebook-f"></i> </a></li>
 											<li><a href="#"> <i class="fab fa-instagram"></i> </a></li>
 											<li><a href="#"> <i class="fab fa-twitter"></i> </a></li>
 											<li><a href="#"> <i class="fab fa-google-plus-g"></i> </a></li>
@@ -36,10 +36,10 @@
 											<div class="single-link">
 												<h3>Company</h3>
 												<ul>
-													<li><a href="#">  About Company </a></li>
-													<li><a href="#">  Feature Course </a></li>
-													<li><a href="#">  Careers </a></li>
-													<li><a href="#">  Contact Us </a></li>
+													<li><a href="{{url('about')}}">   เกี่ยวกับ ZA-SHI</a></li>
+													<li><a href="{{url('experience')}}">  ประวัติคุณครูและผลงาน </a></li>
+													<li><a href="#">  สาขาและสมัครเรียน </a></li>
+													<li><a href="{{url('contact')}}">  ติดต่อเรา </a></li>
 												</ul>
 											</div>
 										</div>
@@ -47,10 +47,9 @@
 											<div class="single-link">
 												<h3>Help Links</h3>
 												<ul>
-													<li><a href="#">  Student Support </a></li>
-													<li><a href="#">  Course Policy </a></li>
-													<li><a href="#">  Register Activation Key </a></li>
-													<li><a href="#">  System Requirements </a></li>
+													<li><a href="#">  จากครูสู่ศิษย์ </a></li>
+													<li><a href="#">  ผลงานนักเรียน </a></li>
+
 
 												</ul>
 											</div>
@@ -59,10 +58,14 @@
 											<div class="single-link">
 												<h3>Course</h3>
 												<ul>
-													<li><a href="#">  Wordpress Development </a></li>
-													<li><a href="#">  Design & Photography </a></li>
-													<li><a href="#">  Learning English </a></li>
-													<li><a href="#">  Javascript Essential </a></li>
+
+													@if(get_cat())
+													@foreach(get_cat() as $k)
+													<li><a href="{{url('course_list/'.$k->id)}}">{{$k->cat_name}}</a></li>
+													@endforeach
+													@endif
+
+
 												</ul>
 											</div>
 										</div>
@@ -92,15 +95,15 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-5">
-						<p>© <a href="#">BanyanTheme</a> All Rights Reserved </p>
+						<p>© <a href="#">za-shi.com</a> All Rights Reserved </p>
 					</div>
 					<div class="col-md-7">
 						<ul>
-							<li><a href="#">  About Company </a></li>
-							<li><a href="#">  Privacy Policy </a></li>
-							<li><a href="#">  Help Center </a></li>
-							<li><a href="#">  Terms </a></li>
-							<li><a href="#">  Site Map </a></li>
+							<li><a href="{{url('about')}}">   เกี่ยวกับ ZA-SHI</a></li>
+							<li><a href="{{url('privacy_policy')}}">  Privacy Policy </a></li>
+							<li><a href="{{url('help_center')}}">  Help Center </a></li>
+							<li><a href="{{url('terms_of_service')}}">  Terms </a></li>
+
 						</ul>
 					</div>
 				</div>

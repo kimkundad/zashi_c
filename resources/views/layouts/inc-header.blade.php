@@ -19,16 +19,16 @@
 							<ul class="navbar-nav ml-auto main-menu-nav">
 
 								<li class="nav-item">
-								<a class="nav-link" href="{{url('/')}}">Home</a>
+								<a class="nav-link" href="{{url('/')}}">หน้าแรก</a>
 							  </li>
 
 							  <li class="nav-item">
-								<a class="nav-link" href="{{url('about')}}">About Us</a>
+								<a class="nav-link" href="{{url('about')}}">เกี่ยวกับ ZA-SHI</a>
 							  </li>
 
 							  <li class="nav-item dropdown">
 									<a class="nav-link" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										Course
+										คอร์ส/ตารางเรียน
 									</a>
 									<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
 
@@ -46,11 +46,11 @@
 							  </li>
 
 								<li class="nav-item">
-								<a class="nav-link" href="{{url('blog')}}">Blog</a>
+								<a class="nav-link" href="{{url('blog')}}">บทความ</a>
 							  </li>
 
 							  <li class="nav-item">
-								<a class="nav-link" href="{{url('contact')}}">Contact Us</a>
+								<a class="nav-link" href="{{url('contact')}}">ติดต่อเรา</a>
 							  </li>
 
 							  <li class="nav-item sign-in">
@@ -58,7 +58,7 @@
 							  </li>
 
 							  <li class="nav-item">
-								<a class="btn-small" href="#">Get Started</a>
+								<a class="btn-small" href="#">เริ่มเรียนรู้</a>
 							  </li>
 
 							</ul>

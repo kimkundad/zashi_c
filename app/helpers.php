@@ -22,3 +22,26 @@ function get_cat(){
 
   return $cat1;
 }
+
+
+
+function get_phone(){
+
+  $cat = DB::table('settings')->select(
+        'settings.*'
+        )
+        ->where('id', 1)
+        ->first();
+  return $cat->phone;
+}
+
+
+function get_email(){
+
+  $cat = DB::table('settings')->select(
+        'settings.*'
+        )
+        ->where('id', 1)
+        ->first();
+  return $cat->email;
+}

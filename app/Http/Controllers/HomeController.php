@@ -185,9 +185,24 @@ class HomeController extends Controller
 
 
     public function email_success(){
-
-
       return view('email_success');
+    }
+
+    public function privacy_policy(){
+      return view('privacy_policy');
+    }
+
+    public function terms_of_service(){
+      return view('terms_of_service');
+    }
+
+
+    public function help_center(){
+      return view('help_center');
+    }
+
+    public function experience(){
+      return view('experience');
     }
 
 

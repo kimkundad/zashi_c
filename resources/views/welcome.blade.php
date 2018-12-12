@@ -186,29 +186,25 @@ TEENEEJJ - ตลาดนัดสวนจตุจักร
 							<div class="col-md-4">
 								<div class="single-feature">
 									<img src="{{url('assets/images/man-2.png')}}" alt="slide 1">
-									<h4>Expert Instructors</h4>
-									<p>We rigorously screen and train our instructors ensure that they meet </p>
+									<h4>ครูพี่โฮม กวดวิชาภาษาญี่ปุ่น</h4>
+									<p>หนึ่งเดียวที่ได้รับเชิญจากสื่อชั้นนำ GMM Channel, TRUE VISIONS, PLOOK, ETV, Dek-D  </p>
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="single-feature">
 									<img src="{{url('assets/images/clock.png')}}" alt="slide 1">
-									<h4>Lifetime Access</h4>
-									<p>We rigorously screen and train our instructors ensure that they meet </p>
+									<h4>เรียนได้ทุกที่ 24 ชม.</h4>
+									<p>za-shi.com และระบบสอนออนไลน์ ระบบ live streaming เรียนรู้เองจากที่บ้าน </p>
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="single-feature">
 									<img src="{{url('assets/images/pc.png')}}" alt="slide 1">
-									<h4>Learn Anywhere</h4>
-									<p>We rigorously screen and train our instructors ensure that they meet </p>
+									<h4>เฉลยข้อสอบ ภาษาญี่ปุ่นล่าสุด</h4>
+									<p>ติวสอบวัดระดับภาษาญี่ปุ่น N1 N2 N3 N4 N5 ผู้นำการเรียนภาษาญี่ปุ่นออนไลน์ ครูพี่โฮมและเอ็ตจัง  </p>
 								</div>
 							</div>
-							<div class="col-md-12">
-								<div class="single-feature">
-									<a href="#" class="btn-small">Get Started For Free</a>
-								</div>
-							</div>
+
 						</div>
 					</div>
 				</div>
@@ -226,13 +222,13 @@ TEENEEJJ - ตลาดนัดสวนจตุจักร
 			<div class="row">
 				<div class="col-md-12">
 					<div class="title-middle">
-						<h2>Coursecity Top Courses</h2>
+						<h2>คอร์สเรียนภาษาญี่ปุ่น</h2>
 					</div>
 				</div>
 
 				<div class="col-md-12">
 					<div id="filters" class="course-menu">
-					  <button class="filter active"  data-filter="all">All Courses</button>
+					  <button class="filter active"  data-filter="all">ทั้งหมด</button>
 
 						@if(get_cat())
 						@foreach(get_cat() as $k)
@@ -290,7 +286,7 @@ TEENEEJJ - ตลาดนัดสวนจตุจักร
 
 
 							<div class="col-md-12 text-center">
-								<a href="#" class="btn-small"> View more </a>
+								<a href="#" class="btn-small"> ดูทั้งหมด </a>
 							</div>
 						</div>
 					</div>
@@ -310,8 +306,8 @@ TEENEEJJ - ตลาดนัดสวนจตุจักร
   		<div class="container">
   			<div class="col-md-12">
   				<div class="title-middle">
-  					<h2>Achieve Your Goals</h2>
-  					<p>Find subjects you're passionate about by browsing our online course categories. Start <br> learning with top courses Built With Industry Experts</p>
+  					<h2>พรหมเทพ ชัยกิตติวณิชย์ (ครูพี่โฮม ZA-SHI)</h2>
+  					<p>สถาบันติว PAT ญี่ปุ่นและภาษาญี่ปุ่น ZA-SHI ภาษาญี่ปุ่น (ครูพี่โฮม) คนแรกและคนเดียวที่ได้ PAT ญี่ปุ่น 300 คะแนนเต็ม เกียรตินิยมอันดับ 1 (เหรียญทอง) อักษรศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</p>
   				</div>
   			</div>
 
@@ -320,22 +316,22 @@ TEENEEJJ - ตลาดนัดสวนจตุจักร
   					<div class="col-md-4">
   						<div class="single-goals">
   							<img src="{{url('assets/images/icon-1.png')}}" alt="slide 1">
-  							<h4>Develope Skill</h4>
-  							<p>These goals will assist them in achieving their ultimate career position </p>
+  							<h4>ติวสอบวัดระดับภาษาญี่ปุ่น</h4>
+  							<p>ติว N1 ติว N2 ติว N3 ติว N4 ติว N5 คันจิ ศัพท์ ไวยากรณ์ การฟัง การอ่าน</p>
   						</div>
   					</div>
   					<div class="col-md-4">
   						<div class="single-goals">
   							<img src="{{url('assets/images/icon-2.png')}}" alt="slide 1">
-  							<h4>Learning Community</h4>
-  							<p>These goals will assist them in achieving their ultimate career position </p>
+  							<h4>ชุมชนการเรียนรู้ภาษาญี่ปุ่น</h4>
+  							<p>สำหรับศิลป์-ญี่ปุ่นและคนที่ไม่ได้เรียนศิลป์-ญี่ปุ่น ภาษาญี่ปุ่นสำหรับคนทำงาน</p>
   						</div>
   					</div>
   					<div class="col-md-4">
   						<div class="single-goals">
   							<img src="{{url('assets/images/icon-4.png')}}" alt="slide 1">
-  							<h4>Real Life Project</h4>
-  							<p>These goals will assist them in achieving their ultimate career position </p>
+  							<h4>วิเคราะห์ผลคะแนนออกมา</h4>
+  							<p>รู้จุดอ่อนจุดแข็งและประเมินโอกาสสอบผ่าน เรียนภาษาญี่ปุ่นออนไลน์กับครูพี่โฮม </p>
   						</div>
   					</div>
   				</div>
@@ -351,10 +347,10 @@ TEENEEJJ - ตลาดนัดสวนจตุจักร
 			<div class="row">
 				<div class="col-md-12">
 					<div class="cta-content">
-						<h3>Ready to Begin?</h3>
-						<p>Find subjects you're passionate about by browsing our online course categories. Start <br> learning with top courses Built With Industry Experts.</p>
-						<a href="#" class="btn-small">Start Teaching</a>
-						<a href="#" class="btn-small">Start Learning</a>
+						<h3>คุณพร้อมเรียนภาษาญี่ปุ่น หรือยัง?</h3>
+						<p>ระหว่างเรียนมีฟังก์ชั่นไลฟ์แชทและฟังก์ชั่นแบบทดสอบ วิเคราะห์ผลคะแนนออกมาเป็นกราฟ <br> พร้อม Startdard Report รายงานคะแนนสอบ โปรแกรมประเมินโอกาสสอบผ่านและสอบติด Admission และ TCAS </p>
+						<a href="#" class="btn-small">เริ่มเรียนรู้</a>
+
 					</div>
 				</div>
 			</div>

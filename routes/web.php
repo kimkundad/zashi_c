@@ -21,6 +21,12 @@ Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/email_success', 'HomeController@email_success')->name('email_success');
 
+Route::get('/privacy_policy', 'HomeController@privacy_policy')->name('privacy_policy');
+Route::get('/terms_of_service', 'HomeController@terms_of_service')->name('terms_of_service');
+Route::get('/help_center', 'HomeController@help_center')->name('help_center');
+Route::get('/experience', 'HomeController@experience')->name('experience');
+
+
 Route::get('/about', 'HomeController@about')->name('about');
 Route::get('/blog', 'HomeController@blog')->name('blog');
 
