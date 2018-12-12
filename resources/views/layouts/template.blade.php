@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title> @yield('title')</title>
-        <meta name="description" content="ร้านค้าและสินค้า ในตลาดนัดสวนจตุจักร รวบรวมร้านค้าที่คัดเลือดมาแล้วอย่างดี จากทั้งหมด 8,000 ร้านค้า">
-        <meta name="author" content="teeneejj">
+        <meta name="description" content="กวดวิชาภาษาญี่ปุ่น, เรียนพิเศษภาษาญี่ปุ่น, ติวสอบวัดระดับภาษาญี่ปุ่น, ติว N1 ติว N2 ติว N3 ติว N4 ติว N5 คันจิ ศัพท์ ไวยากรณ์ N1 N2 N3 N4 N5 การฟัง การอ่าน Tel. 02-658-3819">
+        <meta name="author" content="za-shi.com">
         <meta name="keywords" content="">
         <meta name="googlebot" content="ALL">
         <!-- Favicon icon -->

@@ -1,7 +1,7 @@
 @extends('layouts.template')
 
 @section('title')
-TEENEEJJ - ตลาดนัดสวนจตุจักร
+Zashi (ครูพี่โฮม) ภาษาญี่ปุ่นออนไลน์ ติว PAT ญี่ปุ่น JLPT, PAT
 @stop
 
 @section('stylesheet')
