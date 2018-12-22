@@ -9,7 +9,7 @@ Zashi (ครูพี่โฮม) ภาษาญี่ปุ่นออน�
 <meta property="og:url"           content="{{get_website()}}" />
 <meta property="og:type"          content="website" />
 <meta property="og:title"         content="{{get_fb_title()}}" />
-<meta property="og:image"         content="{{url('assets/category_img'.get_facebook_img())}}" />
+<meta property="og:image"         content="{{url('assets/category_img/'.get_facebook_img())}}" />
 <meta property="og:description"   content="{{get_fb_detail()}}" />
 <meta property="og:image:width" content="600" />
 <meta property="og:image:height" content="314" />
