@@ -10,7 +10,7 @@
 						<div class="row">
 							<div class="col-md-4">
 								<div class="footer-top-right">
-								   <img src="{{url('assets/images/logo.png')}}" alt="slide 1">
+								   <img src="{{url('assets/image/logo_website/'.get_logo())}}" alt="Za-shi logo website">
 								   	<p>ติวเตอร์ภาษาญี่ปุ่นอันดับ 1 ผู้ก่อตั้งสถาบันสอนภาษาญี่ปุ่น Za-shi, Learnsabuy มีสถิติติวลูกศิษย์ที่ติดอักษรศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย ได้มากที่สุด </p>
 	                               <ul>
 	                               		<li>{{get_phone()}}</li>
