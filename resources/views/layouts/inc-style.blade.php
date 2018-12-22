@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="{{url('assets/color/color-switcher.css')}}">
 	<!-- Responsive CSS -->
     <link href="{{url('assets/css/responsive.css')}}" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" >
     <style>
     .course-category-1x .hvrbox .hvrbox-layer_top {
     opacity: 1;
