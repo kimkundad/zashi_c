@@ -152,7 +152,7 @@ TEENEEJJ - ตลาดนัดสวนจตุจักร
  								  <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
 
 
-
+                      <div class="fb-comments" data-href="https://za-shi.org/course_single/{{$course->id_p}}" data-width="100%" data-numposts="10"></div>
 
  								  </div>
  								</div>
