@@ -6,6 +6,17 @@ TEENEEJJ - ตลาดนัดสวนจตุจักร
 
 @section('stylesheet')
 
+<style>
+@media (max-width: 767px){
+.course-details-1x {
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 10px 75px 0 rgba(46, 61, 73, 0.07);
+}
+}
+
+</style>
+
 
 @stop('stylesheet')
 @section('content')
