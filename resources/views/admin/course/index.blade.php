@@ -43,8 +43,8 @@
                     <td >
 
 
-                      <button type="button" style="float: left;padding: 10px; margin-left: 10px;" onclick="window.location.href='{{url('admin/course/'.$u->id.'/edit')}}'"  class="btn btn-icons btn-rounded btn-outline-warning"><i class="icon-settings"></i></button>
-                      <form  action="{{url('admin/course/'.$u->id)}}" method="post" onsubmit="return(confirm('Do you want Delete'))">
+                      <button type="button" style="float: left;padding: 10px; margin-left: 10px;" onclick="window.location.href='{{url('admin/course/'.$u->id_p.'/edit')}}'"  class="btn btn-icons btn-rounded btn-outline-warning"><i class="icon-settings"></i></button>
+                      <form  action="{{url('admin/course/'.$u->id_p)}}" method="post" onsubmit="return(confirm('Do you want Delete'))">
                           <input type="hidden" name="_method" value="DELETE">
                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
                           <button type="submit" style="margin-left: 10px;float: left; padding: 10px;" class="btn btn-icons btn-rounded btn-outline-secondary"><i class="icon-trash"></i></button>
