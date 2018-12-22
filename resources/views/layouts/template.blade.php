@@ -12,7 +12,7 @@
         <meta name="googlebot" content="ALL">
         <!-- Favicon icon -->
         <link rel="shortcut icon" type="image/png" href="{{url('assets/images/favicon.png')}}"/>
-
+        @yield('og_tag')
 
         @include('layouts.inc-style')
         @yield('stylesheet')

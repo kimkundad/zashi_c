@@ -4,6 +4,19 @@
 Zashi (ครูพี่โฮม) ภาษาญี่ปุ่นออนไลน์ ติว PAT ญี่ปุ่น JLPT, PAT
 @stop
 
+
+@section('og_tag')
+<meta property="og:url"           content="{{get_website()}}" />
+<meta property="og:type"          content="website" />
+<meta property="og:title"         content="{{get_fb_title()}}" />
+<meta property="og:image"         content="https://piccurated.com/assets/image/facebook_cover.png?v2" />
+<meta property="og:description"   content="{{get_fb_detail()}}" />
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="314" />
+<meta property="fb:app_id" content="2268218253415224">
+<meta property="fb:admins" content="100002037238809">
+@stop
+
 @section('stylesheet')
 
 <link href="{{url('assets/css/owl.carousel.min.css')}}" rel="stylesheet">

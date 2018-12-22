@@ -35,6 +35,35 @@ function get_phone(){
   return $cat->phone;
 }
 
+function get_website(){
+
+  $cat = DB::table('settings')->select(
+        'settings.*'
+        )
+        ->where('id', 1)
+        ->first();
+  return $cat->website;
+}
+
+function get_fb_title(){
+
+  $cat = DB::table('settings')->select(
+        'settings.*'
+        )
+        ->where('id', 1)
+        ->first();
+  return $cat->fb_title;
+}
+
+function get_fb_detail(){
+
+  $cat = DB::table('settings')->select(
+        'settings.*'
+        )
+        ->where('id', 1)
+        ->first();
+  return $cat->fb_detail;
+}
 
 function get_email(){
 
