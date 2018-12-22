@@ -33,7 +33,7 @@
           </div>
 
           <div class="form-group">
-            <label for="exampleInputUsername1">สีตัวอัพษร</label>
+            <label for="exampleInputUsername1">สีตัวอักษร</label>
             <select name="text_3" class="form-control mb-md" required>
 
                     <option value="#252531">-- สีดำ --</option>

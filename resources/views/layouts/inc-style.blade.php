@@ -28,4 +28,8 @@
     opacity: 1;
     background: rgba(0, 0, 0, 0.3);
     }
+    .btco-hover-menu a, .navbar > li > a {
+    text-transform: capitalize;
+    padding: 0px 15px;
+}
     </style>
