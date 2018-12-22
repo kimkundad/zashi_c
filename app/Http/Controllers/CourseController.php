@@ -95,6 +95,7 @@ class CourseController extends Controller
        $package->c_price = $request['c_price'];
        $package->c_discount = $request['c_discount'];
        $package->c_image = $input['imagename'];
+       $package->c_time_study = $request['c_time_study'];
        $package->c_student = $request['c_student'];
        $package->url_course = $request['url_course'];
        $package->youtube_course = $request['youtube_course'];
@@ -177,6 +178,7 @@ class CourseController extends Controller
            $package->c_video = $request['c_video'];
            $package->c_price = $request['c_price'];
            $package->c_student = $request['c_student'];
+           $package->c_time_study = $request['c_time_study'];
            $package->url_course = $request['url_course'];
            $package->youtube_course = $request['youtube_course'];
            $package->save();
@@ -212,6 +214,7 @@ class CourseController extends Controller
           $package->c_price = $request['c_price'];
           $package->c_discount = $request['c_discount'];
           $package->c_student = $request['c_student'];
+          $package->c_time_study = $request['c_time_study'];
           $package->c_image = $input['imagename'];
           $package->url_course = $request['url_course'];
           $package->youtube_course = $request['youtube_course'];

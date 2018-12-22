@@ -42,6 +42,14 @@
 
 
                             <div class="form-group row">
+                              <label class="col-sm-2 col-form-label">ระยะเวลาของหลักสูตร</label>
+                              <div class="col-sm-10">
+                                <input type="text" class="form-control " name="c_time_study" value="{{ $objs->c_time_study}}" placeholder="ตลอด 24 ชม." required/>
+                              </div>
+                            </div>
+
+
+                            <div class="form-group row">
                               <label class="col-sm-2 col-form-label">Youtube Video คอร์สเรียน</label>
                               <div class="col-sm-10">
                                 <input type="text" class="form-control " name="youtube_course" value="{{ $objs->youtube_course}}" placeholder="https://www.youtube.com/watch?v=2Ga7atYDjTg" required/>
