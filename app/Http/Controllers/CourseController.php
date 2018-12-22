@@ -70,7 +70,6 @@ class CourseController extends Controller
              'c_course' => 'required',
              'c_video' => 'required',
              'c_price' => 'required',
-             'c_discount' => 'required',
              'c_student' => 'required',
              'url_course' => 'required',
              'youtube_course' => 'required'
@@ -162,7 +161,6 @@ class CourseController extends Controller
              'c_course' => 'required',
              'c_video' => 'required',
              'c_price' => 'required',
-             'c_discount' => 'required',
              'c_student' => 'required',
              'url_course' => 'required',
              'youtube_course' => 'required'
@@ -178,7 +176,6 @@ class CourseController extends Controller
            $package->c_course = $request['c_course'];
            $package->c_video = $request['c_video'];
            $package->c_price = $request['c_price'];
-           $package->c_discount = $request['c_discount'];
            $package->c_student = $request['c_student'];
            $package->url_course = $request['url_course'];
            $package->youtube_course = $request['youtube_course'];
