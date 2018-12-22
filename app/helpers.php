@@ -65,6 +65,16 @@ function get_fb_detail(){
   return $cat->fb_detail;
 }
 
+function get_facebook_img(){
+
+  $cat = DB::table('settings')->select(
+        'settings.*'
+        )
+        ->where('id', 1)
+        ->first();
+  return $cat->facebook_img;
+}
+
 function get_email(){
 
   $cat = DB::table('settings')->select(
