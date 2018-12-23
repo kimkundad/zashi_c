@@ -156,7 +156,7 @@ TEENEEJJ - ตลาดนัดสวนจตุจักร
 
 
                           @if($course)
-                          @foreach($course as $courses)
+                          @foreach($course as $coursed)
 
 												  <div class="col-md-4 tile web">
 													<div class="single-course">
